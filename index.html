@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodolfo Bot - DevLogs</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <img src="rodolfo.jpg" alt="Logo Rodolfo" class="bot-logo">
+            <div class="mobile-separator"></div>
+            <div class="header-text">
+                <h1>Rodolfo</h1>
+                <p>Historial de actualizaciones | Powered by Jery</p>
+            </div>
+
+            <img src="logo.png" alt="Logo Dev" class="dev-logo">
+        </header>
+
+        <div class="log-card-wrapper">
+            <div class="log-content">
+                <div class="version-title">
+                    ¡RODOLFO V1.3 YA DISPONIBLE! <span class="tag new">Nuevo</span>
+                    <span class="log-date">03/03/2026</span>
+                </div>
+
+                <p style="color: #ccc; font-size: 1.1rem; margin-bottom: 20px; font-weight: 400;">
+                    <strong>NUEVOS COMANDOS:</strong>
+                </p>
+
+                <ul class="feature-list">
+                    <li>
+                        <strong>Comandos:</strong> <code>!perfil</code> | <code>!perfilgif</code>
+                        <br>Visualiza tu carnet estadístico de peleador (estático o animado).
+                    </li>
+                    <li>
+                        <strong>Comando:</strong> <code>!diploma</code>
+                        <br>Expide un reconocimiento oficial destacando las "habilidades" del usuario.
+                    </li>
+                    <li>
+                        <strong>Comando:</strong> <code>!sebusca</code>
+                        <br>Genera un cartel de búsqueda o reporte Top Secret.
+                    </li>
+                    <li>
+                        <strong>Comando:</strong> <code>!cv</code>
+                        <br>Genera un currículum vitae con un perfil profesional y experiencias ficticias.
+                    </li>
+                    <li>
+                        <strong>Comando:</strong> <code>!noticia</code>
+                        <br>Crea una captura en vivo de "Última Hora" en un noticiero.
+                    </li>
+                    <li>
+                        <strong>Comando:</strong> <code>!entrevista</code>
+                        <br>Minijuego interactivo. Responde 3 preguntas corporativas y recibe tu evaluación oficial.
+                    </li>
+                    <li>
+                        <strong>Comando:</strong> <code>!quiz</code>
+                        <br>Inicia un desafío de 5 preguntas sobre Geometry Dash.
+                    </li>
+                </ul>
+
+                <p style="color: #ccc; font-size: 1.1rem; margin-top: 30px; margin-bottom: 20px; font-weight: 400;">
+                    <strong>⚙️ BUG FIXES & MEJORAS:</strong>
+                </p>
+
+                <ul class="feature-list">
+                    <li><span style="color:#ff6b6b; font-weight:600">[FIX]</span> Se corrigió el error que permitía saltar el tiempo de espera en el comando <code>!versus</code>.</li>
+                    <li><span style="color:#ff6b6b; font-weight:600">[FIX]</span> Se solucionó la repetición constante de imágenes en <code>!meme</code>.</li>
+                    <li><span style="color:#4cd137; font-weight:600">[UPDATE]</span> Se agregaron 9 animaciones (GIFs) aleatorias para las batallas de <code>!versus</code>.</li>
+                    <li><span style="color:#4cd137; font-weight:600">[UPDATE]</span> Se implementó un motor de renderizado interno (Canvas) para generar imágenes dinámicas.</li>
+                    <li><span style="color:#4cd137; font-weight:600">[UPDATE]</span> Rodolfo ahora usa la API oficial de DeepSeek, ofreciendo una experiencia fluida y eliminando los límites de uso anteriores.</li>
+                    <li><span style="color:#4cd137; font-weight:600">[UPDATE]</span> Rodolfo ahora inventa cada <code>!chiste</code> en tiempo real, volviendo su humor más sarcástico y garantizando que ya no repetirá los mismos chistes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="log-card-wrapper">
+            <div class="log-content">
+                <div class="version-title">
+                    ¡RODOLFO V1.2!
+                    <span class="log-date">06/01/2026</span>
+                </div>
+
+                <p style="color: #ccc; font-size: 1.1rem; margin-bottom: 20px; font-weight: 400;">
+                    <strong>⚔️ Sistema de Peleas:</strong> Demuestra quién domina el servidor y gana prestigio.
+                </p>
+
+                <ul class="feature-list">
+                    <li>
+                        <strong>Comando:</strong> <code>!versus @usuario</code> o <code>/versus</code>
+                        <br>Batallas narradas épicamente por Rodolfo.
+                    </li>
+
+                    <li>
+                        <strong>Sistema de puntos:</strong>
+                        <br>Victoria: <span style="color:#4cd137; font-weight:600">+25 puntos</span> | Derrota: <span
+                            style="color:#ff6b6b; font-weight:600">−15 puntos</span>.
+                    </li>
+
+                    <li>
+                        🏆 <strong>Tabla de Clasificación:</strong>
+                        <ul class="sub-list">
+                            <li>Comando: <code>!ranking</code> o <code>/ranking</code>.</li>
+                            <li>Muestra el Top 10 de luchadores del servidor.</li>
+                            <li>Si no estás en el Top, <strong>Rodolfo te indica tu posición exacta al final</strong>.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        ⚙️ <strong>Mejoras Menores:</strong>
+                        <ul class="sub-list">
+                            <li>En <code>!chat</code>, Rodolfo ahora reconoce los nombres de los usuarios.</li>
+                            <li>Se añadió una imagen de error personalizada para mostrarla si ocurre algún fallo
+                                inesperado.</li>
+                        </ul>
+                    </li>
+
+                    <li style="margin-top: 15px; border-top: 1px dashed #333; padding-top: 10px;">
+                        📌 <strong>Importante:</strong> Todas las peleas deben realizarse exclusivamente en el canal:
+                        <em>⚔️・versus</em>.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="log-card-wrapper">
+            <div class="log-content">
+                <div class="version-title">
+                    ¡RODOLFO V1.1!
+                    <span class="log-date">01/01/2026</span>
+                </div>
+                <p style="color: #ccc; font-size: 1.1rem; margin-bottom: 20px; font-weight: 400;">
+                    <strong>Ahora con Personalidades:</strong>
+                </p>
+                <ul class="feature-list">
+                    <li>Modos: Cariñosa (⁠♡⁠), Amargado (😤⁠⁠) y Chill (✨⁠⁠⁠).</li>
+                    <li><strong>Uso rápido:</strong></li>
+                    <li>🤖 <code>!chat</code> → Normal</li>
+                    <li>❤️ <code>!chata</code> → Cariñosa</li>
+                    <li>😠 <code>!chatt</code> → Amargado</li>
+                    <li>😎 <code>!chatc</code> → Chill</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
